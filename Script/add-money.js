@@ -22,7 +22,7 @@ document.getElementById('add-money').addEventListener('click', function (event) 
         if (convertedPin === 1234) {
             const sum = convertedMainBalance + convertedAddMoneyAmount;
             document.getElementById('main-balance').innerText = sum;
-
+            alert(`$ ${convertedAddMoneyAmount} has been added to your account successfully.`)
             //Added Money From this Account Message Show in Transaction 
             const transactionContainer = document.getElementById('transaction-container');
             const div = document.createElement('div');
