@@ -14,6 +14,7 @@ document.getElementById('cash-out-btn').addEventListener('click',function(event)
         if(sum >= 0){
             document.getElementById('main-balance').innerText = sum;
 
+            alert(`$ ${convertedCashOutAmount} CashOut successfully.`)
             //Added Money From this Account Message Show in Transaction 
             const transactionContainer = document.getElementById('transaction-container');
             const div = document.createElement('div');
